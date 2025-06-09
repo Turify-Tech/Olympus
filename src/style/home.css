@@ -41,6 +41,22 @@ body {
 
 }
 
+.title-turify{
+    border: 2px solid;
+    background-color: #F5CE40;
+    padding: 20px;
+    margin-top: 0;
+    display: inline-block;
+    border-radius: 24px;
+    width: 280px; /* Increased width */
+    gap: 0; /* Reduce the gap between the image and text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px; /* Increased height */
+}
+
 
 .home{
     flex-direction: column;
