@@ -1,0 +1,22 @@
+body { 
+    font-family: "Krona One", sans-serif;
+    margin: 5rem;
+}
+.title{
+    color: #F5CE40;
+}
+
+
+.inicio{
+    display: flex;
+    gap: 80px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
