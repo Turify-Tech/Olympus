@@ -66,3 +66,10 @@
   color: #f8bfc9;
   opacity: 1;
 }
+
+.contact-form button:hover {
+  background: #222;         /* Un color más oscuro que #444 */
+  color: #e6c44c;
+  transform: scale(1.08);   /* Agranda el botón */
+  transition: background 0.2s, transform 0.2s;
+}
