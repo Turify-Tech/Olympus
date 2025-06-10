@@ -7,6 +7,7 @@ body {
 .title {
     font-size: 2em;
     margin-top: 80px;
+    margin-left: 200px;
     margin-left: 100px;
     color: #F5CE40;
     font-family: 'Krona One', sans-serif;
@@ -18,6 +19,7 @@ body {
 	grid-template-columns: repeat(2);      
     gap: 40px 40px;
     justify-content: center; 
+	margin: 50px;
 	margin: 50px auto;
 }
 
@@ -25,6 +27,62 @@ body {
     background-color: #EED167; 
     padding: 20px;
     border-radius: 25px; 
+    width: 400px;
+	height: 450px;
+    border: 5px solid #000;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left; 
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    flex: 1;
+    min-width: 150px; 
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+    margin-left: -210px;
+    margin-top: -100px;
+    width: 100%;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+.juli{
+    height: 200px;
+    width: 180px;
+    flex-shrink: 0; 
+    object-fit: cover;
+    border-radius: 10px;
+    align-self: flex-start;
+}
+
+h2{
+    font-size: 20px;
+    color: #000;
+}
+
+p{
+    font-size: 16px;
+    color: #000;
+    margin-top: -20px;
+}
     width: 500px;
 	height: 500px;
     border: 5px solid #000;
