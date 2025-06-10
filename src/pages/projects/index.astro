@@ -1,112 +1,37 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import '../../style/projects.css';
+import Layout from '../../layouts/Layout.astro';    
 ---
-
 <Layout>
-  <section class="projects">
-    <h1>PROJECTS</h1>
-    <div class="cards-container">
-      <div class="project-card">
-        <img src="/images/turify-logo.png" alt="Turify logo" class="project-cover" />
-        <h2>TURIFY</h2>
-        <p>We build custom software with innovation, agility</p>
+    <section class="projects">
+      <h1>PROJECTS</h1>
+      <div class="cards-container">
+        <div class="project-card">
+          <img src="/images/turify-logo.png" alt="Turify logo" class="project-cover" />
+          <h2>TURIFY</h2>
+          <p>We build custom software with innovation, agility</p>
+        </div>
+        <div class="project-card">
+          <img src="/images/project2-cover.jpg" alt="Proyecto 2" class="project-cover" />
+          <h2>Coming Soon</h2>
+          <p>Another innovative solution on the way</p>
+        </div>
       </div>
-      <div class="project-card">
-        <img src="/images/project2-cover.jpg" alt="Proyecto 2" class="project-cover" />
-        <h2>Coming Soon</h2>
-        <p>Another innovative solution on the way</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="motivation">
-    <h2>What motivates us</h2>
-    <div class="motivation-content">
+    <section class="motivation">
+      <h2>What motivates us</h2>
+      <div class="motivation-content">
+        <p>
+          We are driven by challenges that push boundaries, inspired by the climb toward new goals, and energized by the opportunity to shape the future through technology.
+        </p>
+      </div>
+    </section>
+
+    <section class="future">
+      <h2>The future we see</h2>
       <p>
-        We are driven by challenges that push boundaries, inspired by the climb toward new goals, and energized by the opportunity to shape the future through technology.
+        A world where technology enables people and businesses to thrive through smart, elegant, and scalable solutions.
       </p>
-    </div>
-  </section>
-
-  <section class="future">
-    <h2>The future we see</h2>
-    <p>
-      A world where technology enables people and businesses to thrive through smart, elegant, and scalable solutions.
-    </p>
-  </section>
-
-  <style>
-    .projects {
-      padding: 2rem 1rem;
-      background: #EDEDED;
-      text-align: center;
-    }
-
-    .projects h1 {
-      color: #facc15; /* Tailwind yellow-400 */
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .cards-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-    }
-
-    .project-card {
-      background: #fef08a; /* Tailwind yellow-200 */
-      border: 2px solid #000;
-      border-radius: 12px;
-      padding: 1.5rem;
-      max-width: 300px;
-      text-align: center;
-      transition: box-shadow 0.2s;
-    }
-
-    .project-card:hover {
-      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    }
-
-    .project-cover {
-      width: 100%;
-      height: 180px;
-      object-fit: contain;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      background: #EDEDED;
-    }
-
-    .motivation, .future {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .motivation h2,
-    .future h2 {
-      color: #facc15;
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .motivation-content {
-      display: flex;
-      gap: 1.5rem;
-      align-items: flex-start;
-      flex-wrap: wrap;
-    }
-
-    .motivation-img {
-      width: 200px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-
-    .future p, .motivation p {
-      font-size: 1rem;
-      color: #1a1a1a;
-    }
-  </style>
+    </section>
 </Layout>
