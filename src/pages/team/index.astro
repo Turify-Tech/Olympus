@@ -7,58 +7,90 @@ import style from '../../style/team.css';
         <link rel="stylesheet" href={style} />
         <astro:head>
             <title>Team</title>
+            <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </astro:head>
-        <astro:style>
-            {style}
-        </astro:style>
-        <div class="team-content">
-            <slot />
-        </div>
-    </div>
-    <head>
-        <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-    </head>
-    <h1 class="title">TEAM</h1>
-    <div class="container">
-        <div class="yellow-card">
-            <img src="../../../public/images/team/juli.jpeg" class="juli">
-            <div class="card-content">
-                <h2>Julieta Sotelo</h2>
-                <p>Hello! I am Julieta Sotelo, a student of the Higher Technician in Software Development. I am in constant evolution, with the desire to keep growing and learning. Thank you!</p>
-                <div class="social-links">
-                    <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="../../public/CV/CV_SOTELO.pdf">Ver CV</a></p>
+        
+        <h1 class="title">TEAM</h1>
+        
+        <div class="container">
+            <div class="yellow-card">
+                <img src="../../../public/images/team/juli.jpeg" class="team-image" alt="Julieta Sotelo">
+                <div class="card-content">
+                    <div>
+                        <h2>Julieta Sotelo</h2>
+                        <p>Hello! I am Julieta Sotelo, a student of the Higher Technician in Software Development. I am exploring the path of programming and web design. I am in constant evolution, with the desire to keep growing and learning. Thank you!</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                        <a href="../../public/CV/CV_SOTELO.pdf">Ver CV</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="yellow-card">
-            <h2>Joaquín Domínguez</h2>
-            <p>Desarrollador Frontend</p>
-            <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="">Ver CV</a></p>
-            <p>Apasionado por construir productos web accesibles</p>
-        </div>
-        <div class="yellow-card">
-            <h2>Joaquín Domínguez</h2>
-            <p>Desarrollador Frontend</p>
-            <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Ver CV</a></p>
-            <p>Apasionado por construir productos web accesibles</p>
-        </div>
-        <div class="yellow-card">
-            <h2>Joaquín Domínguez</h2>
-            <p>Desarrollador Frontend</p>
-            <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Ver CV</a></p>
-            <p>Apasionado por construir productos web accesibles</p>
-        </div>
-	    <div class="yellow-card">
-            <h2>Joaquín Domínguez</h2>
-            <p>Desarrollador Frontend</p>
-            <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Ver CV</a></p>
-            <p>Apasionado por construir productos web accesibles</p>
-        </div>
-	    <div class="yellow-card">
-            <h2>Joaquín Domínguez</h2>
-            <p>Desarrollador Frontend</p>
-            <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Ver CV</a></p>
-            <p>Apasionado por construir productos web accesibles</p>
+            
+            <div class="yellow-card">
+                <img src="../../../public/images/team/pauli.jpeg" class="team-image" alt="Ana Paula Toledo">
+                <div class="card-content">
+                    <div>
+                        <h2>Ana Paula Toledo</h2>
+                        <p>Hello! I'm Ana Paula, a student in the Higher Technical Program in Software Development, passionate about finding creative and innovative solutions to technological problems. My self-taught ability allows me to constantly learn new skills.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                        <a href="#">Ver CV</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="yellow-card">
+                <img src="../../../public/images/team/joaco.jpeg" class="team-image" alt="joaco">
+                <div class="card-content">
+                    <div>
+                        <h2>Joaquin Dominguez</h2>
+                        <p>Desarrollador Frontend</p>
+                        <p>Apasionado por construir productos web accesibles</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                        <a href="../../../public/CV/CV_JOACO.pdf">Ver CV</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="yellow-card">
+                <img src="../../../public/images/team/sofi.jpeg" class="team-image" alt="Sofia Natali Rubio">
+                <div class="card-content">
+                    <div>
+                        <h2>Sofia Natali Rubio</h2>
+                        <p>Hello, I'm Sofia Rubio, a Software Development student. I love working in a team, and my passion for continuous learning drives me to explore new technologies and develop skills.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sofia-rubio-rubio-61a18a36b/">LinkedIn</a>
+                        <a href="https://github.com/SofiaNRubio">GitHub</a>
+                        <a href="../../../public/CV/CV_SOFI.pdf">Ver CV</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="yellow-card">
+                <img src="https://via.placeholder.com/150" class="team-image" alt="Miembro del equipo">
+                <div class="card-content">
+                    <div>
+                        <h2>Nombre del miembro</h2>
+                        <p>Rol o posición</p>
+                        <p>Descripción breve</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                        <a href="#">Ver CV</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </Layout>
