@@ -7,16 +7,11 @@ body {
 }
 
 .title {
-<<<<<<< HEAD
     font-size: clamp(1.5em, 4vw, 2em);
     margin: 40px 0 20px;
     text-align: center;
-=======
     font-size: 2em;
     margin-top: 80px;
-    margin-left: 200px;
-    margin-left: 100px;
->>>>>>> c23de4e073517d1064b9897cd4a231bb8549c0da
     color: #F5CE40;
     font-family: 'Krona One', sans-serif;
 }
@@ -26,14 +21,11 @@ body {
     flex-wrap: wrap;      
     gap: 30px;
     justify-content: center; 
-<<<<<<< HEAD
     padding: 20px;
     max-width: 1400px;
     margin: 0 auto;
-=======
 	margin: 50px;
 	margin: 50px auto;
->>>>>>> c23de4e073517d1064b9897cd4a231bb8549c0da
 }
 
 .yellow-card {
@@ -106,9 +98,42 @@ h2 {
 p {
     font-size: 0.9em;
     color: #000;
-<<<<<<< HEAD
     margin: 5px 0;
     line-height: 1.4;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Espacio entre icono y texto */
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid #000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.social-links .icon {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    line-height: 1;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 @media (min-width: 600px) {
@@ -139,15 +164,4 @@ p {
         max-width: 450px;
     }
 }
-=======
-    margin-top: -20px;
-}
-    width: 500px;
-	height: 500px;
-    border: 5px solid #000;
-    display: grid;
-    flex-direction: column;
-    text-align: center; 
-}
 </style>
->>>>>>> c23de4e073517d1064b9897cd4a231bb8549c0da
