@@ -1,3 +1,88 @@
+.home-container {
+    background: 
+        linear-gradient(rgba(237, 237, 237, 0.75), rgba(237, 237, 237, 0.85)),
+        url('/images/olympus.jpg') center/cover no-repeat fixed;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.home-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
+
+.home-card {
+    background: linear-gradient(45deg, rgba(255,255,255,0.95) 0%, rgba(240,249,255,0.95) 25%, rgba(230,247,255,0.95) 50%, rgba(240,249,255,0.95) 75%, rgba(255,255,255,0.95) 100%);
+    background-size: 300% 300%;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 3px solid #F5CE40;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: waveShift 10s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+}
+
+.home-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(245, 206, 64, 0.15), transparent);
+    animation: shimmer 3s infinite;
+    pointer-events: none;
+}
+
+.home-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 8px 20px rgba(245, 206, 64, 0.3);
+}
+
+.home-card .titles {
+    position: relative;
+    z-index: 1;
+    font-family: "Krona One", sans-serif;
+}
+
+.home-card p {
+    position: relative;
+    z-index: 1;
+    text-align: justify;
+    line-height: 1.8;
+    color: #333;
+    font-family: "Krona One", sans-serif;
+}
+
+@keyframes waveShift {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 25%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 75%;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 200%;
+    }
+}
+
 .home {
     flex-direction: column;
     align-items: flex-start;
@@ -7,6 +92,7 @@
     font-family: "Krona One", sans-serif;
     width: 100%;
     box-sizing: border-box;
+    padding-bottom: 2rem;
 }
 
 .title {
@@ -17,18 +103,33 @@
     margin: 3rem auto;
     font-family: "Krona One", sans-serif;
     width: 100%;
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(245, 206, 64, 0.2);
 }
 
 .project {
     color: #F5CE40;
-    margin-top: 0;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem auto;
     font-size: 30px;
     font-family: "Krona One", sans-serif;
-    text-align: center;       /* Centrado */
-    width: 100%;              /* Ocupa todo el ancho del contenedor */
+    text-align: center;
     font-weight: bold;
     letter-spacing: 2px;
+    background: rgba(255, 255, 255, 0.65);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    max-width: fit-content;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(245, 206, 64, 0.2);
 }
 
 .inicio {
@@ -41,10 +142,12 @@
 
 .titles{
     color: #F5CE40;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 30px;
-
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .title-turify{
@@ -61,4 +164,66 @@
     justify-content: center;
     align-items: center;
     height: 120px; /* Increased height */
+}
+
+a {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        padding-bottom: 1rem;
+    }
+
+    .home-content {
+        padding: 1rem;
+    }
+
+    .home-card {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-width: 2px;
+    }
+
+    .title {
+        font-size: 16px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .project {
+        font-size: 24px;
+        margin-bottom: 1.5rem;
+    }
+
+    .inicio {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .title-turify {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        min-height: 120px;
+    }
+
+    .titles {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .home {
+        font-size: 16px;
+        padding: 0 1rem 2rem 1rem;
+    }
+
+    .home-card p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
 }

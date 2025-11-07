@@ -17,7 +17,7 @@
     padding: 0 24px;
     height: 48px;
     border-bottom: 2px solid #222;
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: "Krona One", sans-serif;
 }
 
 .header-left {
@@ -113,7 +113,9 @@ html, body {
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
-    background: #f3f3f3;
+    background: 
+        linear-gradient(rgba(237, 237, 237, 0.75), rgba(237, 237, 237, 0.85)),
+        url('/images/olympus.jpg') center/cover no-repeat fixed;
 }
 
 /* Hamburguesa oculta en desktop */
