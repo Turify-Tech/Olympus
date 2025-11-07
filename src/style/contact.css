@@ -1,8 +1,22 @@
 .contact-section {
   max-width: 700px;
   margin: 2rem auto;
-  padding: 0 1rem;
-  font-family: 'Krona One', Arial, sans-serif;
+  padding: 0 1rem 2rem 1rem;
+  font-family: "Krona One", sans-serif;
+}
+
+.contact-title {
+  color: #F5CE40;
+  font-size: 2rem;
+  margin: 0 auto 0.5rem auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: fit-content;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(245, 206, 64, 0.2);
 }
 
 .contact-form {
@@ -72,4 +86,32 @@
   color: #e6c44c;
   transform: scale(1.08);   /* Agranda el botón */
   transition: background 0.2s, transform 0.2s;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    margin: 1rem auto;
+    padding: 0 0.5rem 2rem 0.5rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+
+  .contact-form label {
+    font-size: 0.95rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .contact-form button {
+    font-size: 1.4rem;
+    padding: 0.6rem 2rem;
+  }
 }
